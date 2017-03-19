@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/ash
 
 #
 # Salt-Master Run Script
@@ -10,4 +10,4 @@ set -e
 LOG_LEVEL=${LOG_LEVEL:-"error"}
 
 # Run Salt as a Deamon
-exec sudo /usr/bin/salt-master --log-level=$LOG_LEVEL
+/usr/bin/salt-master --log-level=$LOG_LEVEL --log-file /dev/stdout
